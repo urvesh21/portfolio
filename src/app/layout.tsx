@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,33 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-300">
-        <nav className="bg-cyan-600 p-4 text-black">Hey There</nav>
+        <nav className="bg-slate-800 p-4 text-black text-right flex justify-center">
+          <a
+            className="rounded-lg px-3 py-2 font-medium hover:scale-125 cursor-pointer"
+            href="https://github.com/urvesh21"
+            target="_blank"
+          >
+            <Image
+              className="w-9 h-9"
+              src="/images/github-mark-white.svg"
+              height={144}
+              width={144}
+              alt="Urvesh Patel"
+            />
+          </a>
+          <a
+            className="rounded-lg px-3 py-2 font-medium hover:scale-125 cursor-pointer"
+            href="https://www.linkedin.com/in/urvesh-patel-805a26a6/" target="_blank"
+          >
+            <Image
+              className="w-10 h-10"
+              src="/images/linkedIN.svg"
+              height={144}
+              width={144}
+              alt="Urvesh Patel"
+            />
+          </a>
+        </nav>
         {children}
       </body>
     </html>

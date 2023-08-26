@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-300">
-        <nav className="bg-slate-800 p-4 text-black text-right flex justify-center">
+        <nav className="bg-slate-800 p-4 text-black text-right flex">
           <a
             className="rounded-lg px-3 py-2 font-medium hover:scale-125 cursor-pointer"
             href="https://github.com/urvesh21"
@@ -31,7 +31,8 @@ export default function RootLayout({
           </a>
           <a
             className="rounded-lg px-3 py-2 font-medium hover:scale-125 cursor-pointer"
-            href="https://www.linkedin.com/in/urvesh-patel-805a26a6/" target="_blank"
+            href="https://www.linkedin.com/in/urvesh-patel-805a26a6/"
+            target="_blank"
           >
             <Image
               className="w-10 h-10"
@@ -40,6 +41,13 @@ export default function RootLayout({
               width={144}
               alt="Urvesh Patel"
             />
+          </a>
+          <a
+            className="rounded-full bg-cyan-500 font-bold p-4 ml-auto"
+            href="/downloadFiles/UrveshPatel2023.docx.pdf"
+            download
+          >
+            Download
           </a>
         </nav>
         {children}

@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Expertise from "./Expertise";
 import Introduction from "./Introduction";
+import profileImg from "../../../public/images/1620434351716.jpeg";
 
 const Portfolio = () => {
   return (
@@ -14,7 +15,7 @@ const Portfolio = () => {
           <section>
             <Image
               className="mx-auto w-44 h-44 bg-slate-100 rounded-full mb-7"
-              src="/images/1620434351716.jpeg"
+              src={profileImg}
               height={144}
               width={144}
               alt="Urvesh Patel"

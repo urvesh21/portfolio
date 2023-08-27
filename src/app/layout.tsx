@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Image from 'next/image';
+import linkedInImg from "../../public/images/linkedIN.svg";
+import gitImg from "../../public/images/github-mark-white.svg";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +25,7 @@ export default function RootLayout({
           >
             <Image
               className="w-9 h-9"
-              src="/images/github-mark-white.svg"
+              src={gitImg}
               height={144}
               width={144}
               alt="Urvesh Patel"
@@ -36,7 +38,7 @@ export default function RootLayout({
           >
             <Image
               className="w-10 h-10"
-              src="/images/linkedIN.svg"
+              src={linkedInImg}
               height={144}
               width={144}
               alt="Urvesh Patel"
@@ -44,8 +46,9 @@ export default function RootLayout({
           </a>
           <a
             className="rounded-full bg-cyan-500 font-bold p-4 ml-auto"
-            href="/downloadFiles/UrveshPatel2023.docx.pdf"
+            href="./downloadFiles/UrveshPatel2023.docx.pdf"
             download
+            target="_blank"
           >
             Download
           </a>

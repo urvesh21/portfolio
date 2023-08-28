@@ -7,7 +7,7 @@ import Expertise from "./Expertise";
 import Introduction from "./Introduction";
 import profileImg from "../../../public/images/1620434351716.jpeg";
 
-const Portfolio = () => {
+const PortfolioPage = () => {
   return (
     <main className="p-6">
       <div className="container max-w-md md:max-w-3xl md:flex w-auto bg-white mx-auto h-auto my-5 rounded-xl drop-shadow-md tracking-wide">
@@ -47,4 +47,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioPage;

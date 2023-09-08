@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 import linkedInImg from "../../public/images/linkedIN.svg";
 import gitImg from "../../public/images/github-mark-white.svg";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID as string} />
       <body className="bg-gray-300">
         <nav className="bg-slate-800 p-4 text-black text-right flex">
           <a

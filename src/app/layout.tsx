@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID as string} />
+      <GoogleAnalytics
+        GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID as string}
+      />
       <body className="bg-gray-300">
         <nav className="bg-slate-800 p-4 text-black text-right flex">
           <a
